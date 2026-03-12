@@ -13,29 +13,7 @@
 
 <style>
 
-.envelope{
-width:200px;
-height:120px;
-background:#e74c3c;
-margin:auto;
-margin-top:120px;
-position:relative;
-cursor:pointer;
-border-radius:8px;
-animation:float 2s infinite ease-in-out;
-}
 
-.envelope:before{
-content:"";
-position:absolute;
-top:0;
-left:0;
-width:0;
-height:0;
-border-left:100px solid transparent;
-border-right:100px solid transparent;
-border-bottom:60px solid #c0392b;
-}
 
 .card{
 display:none;
@@ -101,7 +79,6 @@ text-align:center;
 
 <body>
 
-<div class="envelope" onclick="openInvite()"></div>
 
 <div class="card" id="inviteCard">
 
@@ -154,11 +131,6 @@ text-align:center;
 <script src="script.js"></script>
 
 <script>
-
-function openInvite(){
-
-document.querySelector(".envelope").style.display="none";
-document.getElementById("inviteCard").style.display="block";
 
 
 
